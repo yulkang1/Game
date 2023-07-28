@@ -112,20 +112,19 @@ function play() {
   
     // Collision detection with bird and
     // window top and bottom
-  
     if (bird_props.top <= 0 ||
-        bird_props.bottom >= background.bottom) {
-      game_state = 'End';
-      message.innerHTML = 'Press Enter To Restart';
-      message.style.left = '28vw';
-      return;
-    }
-    bird.style.top = bird_props.top + bird_dy + 'px';
-    bird_props = bird.getBoundingClientRect();
-    requestAnimationFrame(apply_gravity);
+      bird_props.bottom >= background.bottom) {
+          game_state = 'End';
+          message.innerHTML = 'Press Enter To Restart';
+          message.style.left = '28vw';
+          return;
   }
+  bird.style.top = bird_props.top + bird_dy + 'px';
+  bird_props = bird.getBoundingClientRect();
   requestAnimationFrame(apply_gravity);
-  
+}
+requestAnimationFrame(apply_gravity);
+
   let pipe_seperation = 0;
     
   // Constant value for the gap between two pipes
