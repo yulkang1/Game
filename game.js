@@ -1,4 +1,4 @@
-
+let pipe = 115;
 // Background scrolling speed
 let move_speed = 3;
     
@@ -92,6 +92,49 @@ function play() {
           }
           element.style.left = 
             pipe_sprite_props.left - move_speed + 'px';
+          if (
+            score_val.innerHTML == '10'
+          ) {
+            move_speed = 6
+            gravity = 0.4
+            pipe = 130
+          }
+          if (
+            score_val.innerHTML == '20'
+          ) {
+            move_speed = 12
+            gravity = 0.4
+            pipe = 150
+          }
+          if (
+            score_val.innerHTML == '30'
+          ) {
+            move_speed = 24
+            gravity = 0.4
+            pipe = 175
+          }
+          if (
+            score_val.innerHTML == '40'
+          ) {
+            move_speed = 48
+            gravity = 0.4
+            pipe = 200
+          }
+          if (
+            score_val.innerHTML == '50'
+          ) {
+            move_speed = 96
+            gravity = 0.4
+            pipe = 300
+          }
+          if (
+            score_val.innerHTML == '60'
+          ) {
+            move_speed = 200
+            gravity = 0.4
+            pipe = 400
+          }
+        
         }
       }
     });
@@ -135,7 +178,7 @@ requestAnimationFrame(apply_gravity);
     // Create another set of pipes
     // if distance between two pipe has exceeded
     // a predefined value
-    if (pipe_seperation > 115) {
+    if (pipe_seperation > pipe) {
       pipe_seperation = 0
         
       // Calculate random position of pipes on y axis

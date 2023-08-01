@@ -13,7 +13,7 @@ body {
 .background {
     height: 100vh;
     width: 100vw;
-    background-color: skyblue;
+    background-image: url(https://www.urbanbrush.net/web/wp-content/uploads/edd/2017/10/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7-2017-10-20-%EC%98%A4%ED%9B%84-11.41.52.png);
 }
   
 .bird {
@@ -29,11 +29,11 @@ body {
     position: fixed;
     top: 40vh;
     left: 100vw;
-    height: 70vh;
+    height: 7vh;
     width: 6vw;
-    background-color: green;
+    background-image: url(https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AEzv0R9jKKzO10dg0lP2XGZIH6hdBFp1%2FOv8JzNMtEAeBqS5CGUNiAhJeFz3EJsq%2Fjzy2PUXVeqlabYuO9sdS7reIgAIuxxOvaAFfz%2ByG5q%2Fulix1GhW9nlt9yVSn%2FCtHu7MsYV4cqgdxLNA%2BbRA7g7Dm4ZSUrlm77PX4x%2Fs4vAc%2F%2BoYI3ID%2B%2FWf5wNray51%2B6H%2BY%2BsMjOse%2BA1Rijm2Mhdwcd2fAAu3sGT6sh9ujCahv%2BYjDm%2BWG4gRVuCdyOrln9JerL2MAj3RWbE7yuM%2FrHUTrQqVG6myjYjGorbi%2F8gYip%2FgG2FL6FN9dnNQxLm0OmIKamr%2B6IWxi4FEDwSThNYKbSXizn0yaEXCEfp1k0d4v9Ig3i6DdTRS5J5UV46x98%2BArUJsY%2Fd1BSDJ5opVBaZYFcN9BLzxg9x41POosMyNboefd5OLOiBGKTNtHHww7QmLn0AaUeQ76a6o%2BatqK4ZT1XZQEbBBEnFflUnXYJrs29Ulw5wZ2aXx2GwGRKnaxTlaPlxZ5M0yiN7Y5oHpWpYXiJBVfrL8ROOOuonmIJ%2FglAt1%2FWI8VGFuqVK%2BOBJpSS6TfuAIZDztpR9wlcFknttF0g%3D%3D&sz=w51);
+    background-repeat: no-repeat;
 }
-  
 .message {
     position: fixed;
     z-index: 10;
