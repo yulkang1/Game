@@ -21,6 +21,12 @@ let message =
     document.querySelector('.message');
 let score_title =
     document.querySelector('.score_title');
+
+// Getting reference to the score element
+let level_val =
+    document.querySelector('.level_val');
+let level_title =
+    document.querySelector('.level_title');
     
 // Setting initial game state to start
 let game_state = 'Start';
@@ -92,47 +98,42 @@ function play() {
           }
           element.style.left = 
             pipe_sprite_props.left - move_speed + 'px';
-          if (
+          
+            if (
             score_val.innerHTML == '10'
           ) {
             move_speed = 6
             gravity = 0.4
-            pipe = 130
           }
           if (
             score_val.innerHTML == '20'
           ) {
             move_speed = 12
             gravity = 0.4
-            pipe = 150
           }
           if (
             score_val.innerHTML == '30'
           ) {
             move_speed = 24
             gravity = 0.4
-            pipe = 175
           }
           if (
             score_val.innerHTML == '40'
           ) {
             move_speed = 48
             gravity = 0.4
-            pipe = 200
           }
           if (
             score_val.innerHTML == '50'
           ) {
             move_speed = 96
             gravity = 0.4
-            pipe = 300
           }
           if (
             score_val.innerHTML == '60'
           ) {
             move_speed = 200
             gravity = 0.4
-            pipe = 400
           }
         
         }

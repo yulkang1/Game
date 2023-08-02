@@ -60,3 +60,16 @@ body {
 .score_val {
     color: gold;
 }
+.level {
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    font-weight: 100;
+    color: goldenrod;
+    top: 0;
+    left: 0;  
+}
+.level_val {
+    color:gold;
+}
